@@ -138,3 +138,39 @@ header .toggle.active {
 .sidebar ul li a:hover {
   color: #3f8ffc;
 }
+
+.about {
+  position: relative;
+  width: 100%;
+  background: #162c3b;
+  display: flex;
+}
+
+.about .contentBox {
+  background: #162c3b;
+  padding: 100px;
+  width: 50%;
+}
+
+.about .contentBox .heading {
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.about .contentBox .text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.imgBox {
+  position: relative;
+  width: 50%;
+  background-image: url(assets/window.jpg);
+  background-size: cover;
+  background-position: center;
+}
