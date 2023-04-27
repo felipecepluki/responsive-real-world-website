@@ -5,18 +5,56 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Clac() | Try To Explain</title>
+    <title>Complete Responsive Website Design</title>
   </head>
   <body>
-    <div class="container">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+    <div class="wrapper">
+      <header>
+        <a href="#" class="logo">Brand Name</a>
+        <div class="toggle" onclick="toggleClassName()"></div>
+      </header>
+      <div class="sidebar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="banner">
+        <img src="./assets/bg.jpg" />
+        <div class="content">
+          <h2>Sucess by Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut accumsan
+            dignissim urna eu ultrices. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Morbi cursus
+            sodales nibh eu hendrerit. Donec congue dolor nec tellus pretium
+            iaculis. Cras luctus justo sit amet mauris pulvinar, viverra
+            vehicula sapien porttitor. Quisque sollicitudin viverra turpis quis
+            ornare. Nunc bibendum enim quis pretium ultricies. Nulla lobortis
+            tempus enim vel efficitur. Duis ut ultricies orci. Nam et nisi et
+            magna malesuada sodales interdum vel nisl.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="box2"></div>
-    <div class="box3"></div>
-    <div class="box4"></div>
+    <script type="text/javascript">
+      function toggleClassName() {
+        var sidebar = document.querySelector(".sidebar");
+        var wrapper = document.querySelector(".wrapper");
+        var toggle = document.querySelector(".toggle");
+        sidebar.classList.toggle("active");
+        wrapper.classList.toggle("active");
+        toggle.classList.toggle("active");
+      }
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
   </body>
 </html>

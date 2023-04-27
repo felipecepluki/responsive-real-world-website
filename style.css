@@ -1,55 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
+  background: #12222d;
+  height: 1000px;
+}
+
+.wrapper {
+  position: relative;
+  transition: 0.5s;
+  left: 0;
+}
+
+.wrapper.active {
+  left: -400px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  transition: 0.5s;
+}
+
+header.sticky {
+  padding: 20px 100px;
+  background: #162c3b;
+}
+
+header .logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header .toggle {
+  position: relative;
+  width: 36px;
+  height: 28px;
+  background: url(assets/toggle.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+header .toggle.active {
+  background: url(assets/close.png);
+  background-size: cover;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  background: #3475ca;
+}
+
+.banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+}
+
+.banner .content {
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  font-size: 60px;
+  color: #fff;
+}
+
+.banner .content p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.sidebar {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background: #12222d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar ul {
+  position: relative;
+  display: flex;
   flex-direction: column;
 }
 
-.container {
-  position: relative;
-  width: 1000px;
-  height: 200px;
-  display: flex;
-  background: #ccc;
+.sidebar ul li {
+  list-style: none;
+  margin: 5px 0;
 }
 
-.container .box {
-  position: relative;
-  min-width: calc(calc(100% / 5) - 20px);
-  height: calc(100% - 20px);
-  background: #000;
-  margin: 10px 10px 10px 10px;
+.sidebar ul li a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
 }
 
-.box2 {
-  position: relative;
-  width: calc(200px * 5);
-  height: 200px;
-  background: #000;
-  margin: 10px 0;
-}
-
-.box3 {
-  position: relative;
-  width: calc(2000px / 4);
-  height: 200px;
-  background: #000;
-  margin: 10px 0;
-}
-
-.box4 {
-  position: relative;
-  --w: 400px;
-  --h: 100px;
-  width: calc(var(--w) * 3);
-  height: calc(var(--h) * 5);
-  background: #000;
-  margin: 10px 0;
+.sidebar ul li a:hover {
+  color: #3f8ffc;
 }
