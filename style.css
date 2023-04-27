@@ -266,3 +266,41 @@ header .toggle.active {
 .client .imgBox img:hover {
   opacity: 1;
 }
+
+.testimonials {
+  position: relative;
+  padding: 100px;
+  background: #12222d;
+  text-align: center;
+}
+
+.testimonials .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonials .container .containerBox {
+  position: relative;
+  background: #fff;
+  padding: 60px 50px;
+  margin: 10px;
+  width: 540px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials .container .containerBox p {
+  font-style: italic;
+}
+
+.testimonials .container .containerBox h3 {
+  width: 100%;
+  text-align: right;
+  font-weight: 500;
+  color: #3f8ffc;
+}
