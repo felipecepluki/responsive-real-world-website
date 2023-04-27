@@ -152,7 +152,7 @@ header .toggle.active {
   width: 50%;
 }
 
-.about .contentBox .heading {
+.heading {
   position: relative;
   color: #fff;
   font-size: 30px;
@@ -161,7 +161,7 @@ header .toggle.active {
   margin-bottom: 10px;
 }
 
-.about .contentBox .text {
+.text {
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -173,4 +173,40 @@ header .toggle.active {
   background-image: url(assets/window.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.services {
+  position: relative;
+  background: #12222d;
+  text-align: center;
+  padding: 100px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.container .serviceBox {
+  position: relative;
+  background: #fff;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .serviceBox img {
+  max-width: 100px;
+}
+
+.container .serviceBox h2 {
+  font-weight: 500px;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
