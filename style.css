@@ -238,3 +238,31 @@ header .toggle.active {
   max-width: 100%;
   filter: invert();
 }
+
+.client {
+  position: relative;
+  padding: 100px;
+  background: #162c3b;
+  text-align: center;
+}
+
+.client .imgBox {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.client .imgBox img {
+  display: inline-block;
+  position: relative;
+  max-width: 200px;
+  margin: 20px;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.client .imgBox img:hover {
+  opacity: 1;
+}
