@@ -17,17 +17,17 @@
       <!-- sidebar -->
       <div class="sidebar">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home" onclick="toggleClassName()">Home</a></li>
+          <li><a href="#about" onclick="toggleClassName()">About</a></li>
+          <li><a href="#services" onclick="toggleClassName()">Services</a></li>
+          <li><a href="#client" onclick="toggleClassName()">Clients</a></li>
+          <li><a href="#testimonials" onclick="toggleClassName()">Testimonials</a></li>
+          <li><a href="#team" onclick="toggleClassName()">Team</a></li>
+          <li><a href="#contact" onclick="toggleClassName()">Contact</a></li>
         </ul>
       </div>
       <!-- banner -->
-      <div class="banner">
+      <div class="banner" id="home">
         <img src="./assets/bg.jpg" />
         <div class="content">
           <h2>Sucess by Design</h2>
@@ -46,7 +46,7 @@
       </div>
     </div>
     <!-- about -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="contentBox">
         <h2 class="heading">About Us</h2>
         <p class="text">
@@ -81,7 +81,7 @@
       <div class="imgBox"></div>
     </section>
     <!-- service -->
-    <section class="services">
+    <section class="services" id="services">
       <h2 class="heading">Our Services</h2>
       <p class="text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod
@@ -126,7 +126,7 @@
       </div>
     </section>
     <!-- clients -->
-    <section class="client">
+    <section class="client" id="client">
       <h2 class="heading">Our Clients</h2>
       <p class="text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
@@ -142,7 +142,7 @@
       </div>
     </section>
     <!-- testimonials -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <h2 class="heading">What our client says</h2>
       <div class="container">
         <div class="containerBox">
@@ -172,7 +172,7 @@
       </div>
     </section>
     <!-- team -->
-    <section class="team">
+    <section class="team" id="team">
       <h2 class="heading">Our Team</h2>
       <p class="text">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quos
@@ -230,7 +230,7 @@
       </div>
     </section>
     <!-- contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div>
         <h2 class="heading">Contact Us</h2>
         <p class="text">
@@ -261,7 +261,7 @@
       <div class="imgBox2"></div>
     </section>
     <!-- footer -->
-    <section class="footer">
+    <section class="footer" id="team">
       <p class="text">Design & Developed by Felipe Cepluki</p>
       <ul>
         <p class="text">Follow us on: </p>
