@@ -1,34 +1,55 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto&display=swap");
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 body {
-  min-height: 100vh;
-  background: #ccc;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .container {
   position: relative;
-  width: 1200px;
-  height: auto;
-  background: #fff;
+  width: 1000px;
+  height: 200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  background: #ccc;
 }
 
 .container .box {
   position: relative;
-  width: 200px;
+  min-width: calc(calc(100% / 5) - 20px);
+  height: calc(100% - 20px);
+  background: #000;
+  margin: 10px 10px 10px 10px;
+}
+
+.box2 {
+  position: relative;
+  width: calc(200px * 5);
   height: 200px;
-  background: #111;
-  margin: 20px;
+  background: #000;
+  margin: 10px 0;
+}
+
+.box3 {
+  position: relative;
+  width: calc(2000px / 4);
+  height: 200px;
+  background: #000;
+  margin: 10px 0;
+}
+
+.box4 {
+  position: relative;
+  --w: 400px;
+  --h: 100px;
+  width: calc(var(--w) * 3);
+  height: calc(var(--h) * 5);
+  background: #000;
+  margin: 10px 0;
 }
