@@ -304,3 +304,58 @@ header .toggle.active {
   font-weight: 500;
   color: #3f8ffc;
 }
+
+.team {
+  position: relative;
+  padding: 0 100px 100px;
+  text-align: center;
+}
+
+.team .container {
+  margin-top: 30px;
+}
+
+.team .teamBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.team .teamBox .box {
+  margin: 0 10px;
+  width: 260px;
+  padding: 5px;
+  background: #fff;
+}
+
+.team .teamBox .box .imgBox {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.team .teamBox .box .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team .teamBox .box .content {
+  padding: 15px 0;
+}
+
+.team .teamBox .box .content h2 {
+  position: relative;
+  font-size: 18px;
+  line-height: 1.2em;
+}
+
+.team .teamBox .box .content h2 span {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+}
