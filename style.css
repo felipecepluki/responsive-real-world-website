@@ -167,7 +167,7 @@ header .toggle.active {
   font-weight: 600;
 }
 
-.imgBox {
+.about .imgBox {
   position: relative;
   width: 50%;
   background-image: url(assets/window.jpg);
@@ -199,6 +199,7 @@ header .toggle.active {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .container .serviceBox img {
@@ -209,4 +210,31 @@ header .toggle.active {
   font-weight: 500px;
   font-size: 20px;
   letter-spacing: 1px;
+}
+
+.technology {
+  position: relative;
+  background: #3f8ffc;
+  width: 100%;
+  padding: 100px;
+  padding-top: 300px;
+  margin-top: -300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.technology .contentBox {
+  position: relative;
+  max-width: 800px;
+}
+
+.technology .imgBox {
+  position: relative;
+  max-width: 250px;
+}
+
+.technology .imgBox img {
+  max-width: 100%;
+  filter: invert();
 }
