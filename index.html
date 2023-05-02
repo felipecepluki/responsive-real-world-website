@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="sal.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Complete Responsive Website Design</title>
@@ -29,7 +30,8 @@
       <!-- banner -->
       <div class="banner" id="home">
         <img src="./assets/bg.jpg" />
-        <div class="content">
+        <div class="content" data-sal="slide-left"
+        data-sal-duration="500">
           <h2>Sucess by Design</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut accumsan
@@ -47,7 +49,8 @@
     </div>
     <!-- about -->
     <section class="about" id="about">
-      <div class="contentBox">
+      <div class="contentBox" data-sal="slide-right"
+      data-sal-duration="500">
         <h2 class="heading">About Us</h2>
         <p class="text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
@@ -78,31 +81,37 @@
           laboriosam quas ipsa expedita totam esse? Odio, iusto adipisci!
         </p>
       </div>
-      <div class="imgBox"></div>
+      <div class="imgBox" data-sal="slide-left"
+      data-sal-duration="500"></div>
     </section>
     <!-- service -->
     <section class="services" id="services">
-      <h2 class="heading">Our Services</h2>
-      <p class="text">
+      <h2 class="heading" data-sal="slide-right"
+      data-sal-duration="500">Our Services</h2>
+      <p class="text" data-sal="slide-left"
+      data-sal-duration="500">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod
         inventore, sit amet ipsam officia doloribus voluptatem recusandae ut
         dolore ea blanditiis unde ducimus veniam illum labore? A, quod
         accusamus!
       </p>
       <div class="container">
-        <div class="serviceBox">
+        <div class="serviceBox" data-sal="slide-down"
+        data-sal-duration="500">
           <div>
             <img src="assets/icon1.png" />
             <h2>Design</h2>
           </div>
         </div>
-        <div class="serviceBox">
+        <div class="serviceBox" data-sal="slide-up"
+        data-sal-duration="500">
           <div>
             <img src="assets/icon2.png" />
             <h2>Development</h2>
           </div>
         </div>
-        <div class="serviceBox">
+        <div class="serviceBox" data-sal="slide-down"
+        data-sal-duration="500">
           <div>
             <img src="assets/icon1.png" />
             <h2>Branding</h2>
@@ -112,7 +121,8 @@
     </section>
     <!-- technologies -->
     <section class="technology">
-      <div class="contentBox">
+      <div class="contentBox" data-sal="slide-right"
+      data-sal-duration="500">
         <h2 class="heading">We use cutting edge technology</h2>
         <p class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum
@@ -121,7 +131,8 @@
           quibusdam ducimus!
         </p>
       </div>
-      <div class="imgBox">
+      <div class="imgBox" data-sal="slide-left"
+      data-sal-duration="500">
         <img src="assets/tech.png" />
       </div>
     </section>
@@ -145,7 +156,8 @@
     <section class="testimonials" id="testimonials">
       <h2 class="heading">What our client says</h2>
       <div class="container">
-        <div class="containerBox">
+        <div class="containerBox" data-sal="slide-right"
+        data-sal-duration="500">
           <div>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -157,7 +169,8 @@
             <h3>Someone Famouse</h3>
           </div>
         </div>
-        <div class="containerBox">
+        <div class="containerBox" data-sal="slide-left"
+        data-sal-duration="500">
           <div>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -173,8 +186,10 @@
     </section>
     <!-- team -->
     <section class="team" id="team">
-      <h2 class="heading">Our Team</h2>
-      <p class="text">
+      <h2 class="heading" data-sal="slide-left"
+      data-sal-duration="500">Our Team</h2>
+      <p class="text" data-sal="slide-right"
+      data-sal-duration="500">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quos
         distinctio nulla veritatis, sapiente fugiat, perferendis alias sed
         aliquam minus adipisci culpa. Harum dolor consectetur veniam dolores,
@@ -230,17 +245,20 @@
       </div>
     </section>
     <!-- contact -->
-    <section class="contact" id="contact">
+    <section class="contact">
       <div>
-        <h2 class="heading">Contact Us</h2>
-        <p class="text">
+        <h2 class="heading" data-sal="slide-left"
+        data-sal-duration="500">Contact Us</h2>
+        <p class="text" data-sal="slide-right"
+        data-sal-duration="500">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi eum accusamus similique quos ullam aspernatur perferendis fugit aliquid, ad esse temporibus exercitationem enim sunt voluptatum rem ea officia id hic.
         </p>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="contact">
       <div class="contentBox redBg">
-        <div class="form">
+        <div class="form" data-sal="slide-right"
+        data-sal-duration="500">
           <div class="inputBox">
             <input type="text" name="" placeholder="Full Name">
           </div>
@@ -270,7 +288,12 @@
         <li><a href="#"><img src="assets/linkedin.png"></a></li>
       </ul>
     </section>
+    <script type="text/javascript" src="sal.js"></script>
     <script type="text/javascript">
+      sal({
+        once: false,
+      })
+
       function toggleClassName() {
         var sidebar = document.querySelector(".sidebar");
         var wrapper = document.querySelector(".wrapper");
